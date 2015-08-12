@@ -11,30 +11,15 @@ public class Homework1 {
 	
 	boolean soongsilhaeng = false;
 
-	
-	String station[] = new String [12];
-	String exit[] = new String [7];
-	
 	//남성역에서 군자역까지 순서대로 역이름
-	station [0]="이수";
-	station [1]="내방";
-	station [2]="고속터미널";
-	station [3]="반포";
-	station [4]="논현";
-	station [5]="학동";
-	station [6]="압구정 로데오";
-	station [7]="청담";
-	station [8]="뚝섬 유원지";
-	station [9]="건대입구";
-	station [10]="어린이 대공원";
-	station [11]="군자"; //내가 내릴지점 
+	String[] station ={"이수", "내방", "고속터미널", "반포", "논현", "학동",
+			"압구정 로데오", "청담", "뚝섬 유원지", "건대입구", "어린이 대공원", "군자"};
 	
-	exit[1]="1번출구";
-	exit[2]="2번출구";
-	exit[3]="3번출구";
-    exit[4]="4번출구";
-    exit[5]="5번출구";
-    exit[6]="6번출구";
+	String[] exit = {"1번 출구", "2번 출구", "3번 출구", "4번 출구", "5번 출구", "6번 출구"};
+	
+	
+	
+	
     
     int escalator = 1; //
 	int seatNum = 4;  // 지하철 좌석 수
@@ -152,7 +137,9 @@ public class Homework1 {
     	else {System.out.println("계단을 걸어 올라간다");
 
 	}
+    
 
 }
 }
+
 	
