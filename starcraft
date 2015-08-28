@@ -19,10 +19,44 @@ public static void main(String[] args) {
 	name=scan.nextLine();
 	
 	if(name.equals("protoss")){  
-	
-		zealrot z=new zealrot();
 		probe p = new probe();
+		zealrot z=new zealrot();
+		 darktemplar d=new darktemplar();
+		 System.out.println("probe zealrot darktemplar");
+		System.out.print("유닛을 선택하세요:");
+		unitname=scan.nextLine();
 		
+
+		if(unitname.equals("probe"))
+		{
+			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+p.color+" 체력은 "+p.hp+" 크기는 "+p.power+"입니다.");
+		   System.out.println(name+"의 종족특성입니다.");
+			p.language();  
+			System.out.println(unitname+" 의 공격방식,스킬,대사 입니다");
+			p.attack();    
+		    p.skill();
+		    p.sound();
+			}
+		if(unitname.equals("zealrot"))
+		{
+			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+z.color+" 체력은 "+z.hp+" 크기는 "+z.power+"입니다.");
+		   System.out.println(name+"의 종족특성입니다.");
+			z.language();  
+			System.out.println(unitname+" 의 공격방식,스킬,대사 입니다");
+			z.attack();    
+		    z.skill();
+		    z.sound();
+			}
+		if(unitname.equals("darktemplar"))
+		{
+			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+d.color+" 체력은 "+d.hp+" 크기는 "+d.power+"입니다.");
+		   System.out.println(name+"의 종족특성입니다.");
+			d.language();  
+			System.out.println(unitname+" 의 공격방식,스킬,대사 입니다");
+			d.attack();    
+		    d.skill();
+		    d.sound();
+			}
 		}
 	
 	if(name.equals("zerg")){
@@ -31,7 +65,7 @@ public static void main(String[] args) {
 		zergling g=new zergling();
 		ultralisk u=new ultralisk();
 		System.out.println("drone zergling ultralisk");
-		System.out.println(" 유닛을 선택하세요:");
+		System.out.print(" 유닛을 선택하세요:");
 		unitname=scan.nextLine();
 		
 		if(unitname.equals("drone"))
@@ -39,7 +73,7 @@ public static void main(String[] args) {
 			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+d.color+" 체력은 "+d.hp+" 크기는 "+d.power+"입니다.");
 		   System.out.println(name+"의 종족특성입니다.");
 			d.speciesSkill();  // 저그 고유스킬
-			System.out.println(unitname+" 의 공격방식,스킬 대사 입니다");
+			System.out.println(unitname+" 의 공격방식,스킬,대사 입니다");
 			d.attack();    
 		     d.skill();
 		     d.sound();
@@ -49,7 +83,7 @@ public static void main(String[] args) {
 				System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+g.color+" 체력은 "+g.hp+" 크기는 "+g.power+"입니다.");
 				System.out.println(name+"의 종족특성입니다.");
 				g.speciesSkill();  // 저그 고유스킬
-				System.out.println(unitname+" 의 공격방식,스킬 대사 입니다");
+				System.out.println(unitname+" 의 공격방식,스킬,대사 입니다");
 				g.attack();    
 			     g.skill();
 			     g.sound();
@@ -59,7 +93,7 @@ public static void main(String[] args) {
 			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+u.color+" 체력은 "+u.hp+" 크기는 "+u.power+"입니다.");
 			System.out.println(name+"의 종족특성입니다.");
 			u.speciesSkill();  // 저그 고유스킬
-			System.out.println(unitname+" 의 공격방식,스킬 대사 입니다");
+			System.out.println(unitname+" 의 공격방식,스킬,대사 입니다");
 			u.attack();    
 		     u.skill();
 		     u.sound();
@@ -78,8 +112,8 @@ public static void main(String[] args) {
 		if(unitname.equals("SCV")){
 			
 			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+s.color+" 체력은 "+s.hp+" 크기는 "+s.power+"입니다.");
-		     s.attack();    
-		     s.language();
+			s.language(); 
+			s.attack();    
 		     s.skill();
 		     s.sound();
 			}
@@ -88,16 +122,16 @@ public static void main(String[] args) {
 		if(unitname.equals("marine")){
 	
 		System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+m.color+" 체력은 "+m.hp+" 크기는 "+m.power+"입니다.");
-	     m.attack();    
-	     m.language();
+		 m.language(); 
+		m.attack();    
 	     m.skill();
 	     m.sound();
 		}
 		if(unitname.equals("Tank")){
 			
 			System.out.println(name+"의 "+unitname+"의"+" 기본정보 ="+" 색깔은 "+t.color+" 체력은 "+t.hp+" 크기는 "+t.power+"입니다.");
-		     t.attack();   
-		     t.language();
+			 t.language(); 
+			t.attack();   
 		     t.skill();
 		     t.sound();
 			}
